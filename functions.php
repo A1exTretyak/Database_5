@@ -23,7 +23,7 @@ function addInfo($idclass, $fio, $birth,  $home, $phonenumber)
 {
     global $link;
     OpenDB();
-    $add=mysqli_query($link, "INSERT into scheduletravel (class_id, full_name, birth_date, address, phone) value ('$idclass', '$fio', '$birth', ' $home', '$phonenumber')");
+    $add=mysqli_query($link, "INSERT into student (class_id, full_name, birth_date, address, phone) value ('$idclass', '$fio', '$birth', ' $home', '$phonenumber')");
     CloseDB();
     return $add;
 }
